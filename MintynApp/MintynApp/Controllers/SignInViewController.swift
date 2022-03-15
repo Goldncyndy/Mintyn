@@ -193,8 +193,12 @@ class SignInViewController: UIViewController {
     textField.layer.borderColor =  UIColor.black.cgColor
     textField.keyboardType = .namePhonePad
     textField.layer.cornerRadius = 10
+    textField.font = UIFont(name: "Helvetica", size: 12)
     textField.autocapitalizationType = .none
-    textField.placeholder = "+234 56789012"
+    textField.attributedPlaceholder = NSAttributedString(
+      string: "+234 56789012",
+      attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
+  )
     textField.textColor = .white
     return textField
   }()
@@ -204,6 +208,7 @@ class SignInViewController: UIViewController {
       textField.translatesAutoresizingMaskIntoConstraints = false
       textField.placeholder = "johnsmith1#"
       textField.textColor = .white
+      textField.font = UIFont(name: "Helvetica", size: 12)
       textField.backgroundColor = UIColor(red: 0.15, green: 0.15, blue: 0.15, alpha: 1.00)
       textField.isSecureTextEntry = true
       textField.autocapitalizationType = .none

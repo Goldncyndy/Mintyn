@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4D4448127DDB9B300426FBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4448027DDB9B300426FBC /* AppDelegate.swift */; };
+		B4D4448327DDB9B300426FBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4448227DDB9B300426FBC /* SceneDelegate.swift */; };
+		B4D4448527DDB9B300426FBC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4448427DDB9B300426FBC /* SignInViewController.swift */; };
+		B4D4448827DDB9B300426FBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D4448627DDB9B300426FBC /* Main.storyboard */; };
+		B4D4448A27DDB9B600426FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D4448927DDB9B600426FBC /* Assets.xcassets */; };
+		B4D4448D27DDB9B600426FBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D4448B27DDB9B600426FBC /* LaunchScreen.storyboard */; };
+		B4D4449527DDBAB400426FBC /* Extension+SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4449427DDBAB400426FBC /* Extension+SignInViewController.swift */; };
+		B4D4449727DE396800426FBC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4449627DE396700426FBC /* SettingsViewController.swift */; };
+		B4D4449927DE39AA00426FBC /* Extension+SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4449827DE39AA00426FBC /* Extension+SettingsViewController.swift */; };
+		B4D4449B27DE3CC500426FBC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4449A27DE3CC500426FBC /* HomeViewController.swift */; };
+		B4D4449D27DE3CDD00426FBC /* FinancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4449C27DE3CDD00426FBC /* FinancesViewController.swift */; };
+		B4D4449F27DE3CEE00426FBC /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4449E27DE3CEE00426FBC /* CardsViewController.swift */; };
+		B4D444A127DE3CFE00426FBC /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D444A027DE3CFE00426FBC /* SupportViewController.swift */; };
+		B4D444A327DE427400426FBC /* TabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D444A227DE427400426FBC /* TabsViewController.swift */; };
+		B4D444A527E080FB00426FBC /* Extension+HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D444A427E080FB00426FBC /* Extension+HomeViewController.swift */; };
+		B4D444AC27E0862F00426FBC /* LegalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D444AB27E0862F00426FBC /* LegalViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B4D4447D27DDB9B300426FBC /* MintynApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MintynApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D4448027DDB9B300426FBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B4D4448227DDB9B300426FBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B4D4448427DDB9B300426FBC /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		B4D4448727DDB9B300426FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4D4448927DDB9B600426FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4D4448C27DDB9B600426FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B4D4448E27DDB9B600426FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4D4449427DDBAB400426FBC /* Extension+SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+SignInViewController.swift"; sourceTree = "<group>"; };
+		B4D4449627DE396700426FBC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B4D4449827DE39AA00426FBC /* Extension+SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+SettingsViewController.swift"; sourceTree = "<group>"; };
+		B4D4449A27DE3CC500426FBC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B4D4449C27DE3CDD00426FBC /* FinancesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancesViewController.swift; sourceTree = "<group>"; };
+		B4D4449E27DE3CEE00426FBC /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		B4D444A027DE3CFE00426FBC /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		B4D444A227DE427400426FBC /* TabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsViewController.swift; sourceTree = "<group>"; };
+		B4D444A427E080FB00426FBC /* Extension+HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+HomeViewController.swift"; sourceTree = "<group>"; };
+		B4D444AB27E0862F00426FBC /* LegalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4D4447A27DDB9B300426FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4D4447427DDB9B300426FBC = {
+			isa = PBXGroup;
+			children = (
+				B4D4447F27DDB9B300426FBC /* MintynApp */,
+				B4D4447E27DDB9B300426FBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4D4447E27DDB9B300426FBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4D4447D27DDB9B300426FBC /* MintynApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4D4447F27DDB9B300426FBC /* MintynApp */ = {
+			isa = PBXGroup;
+			children = (
+				B4D444AA27E082A900426FBC /* Resources */,
+				B4D444A927E0829D00426FBC /* Controllers */,
+				B4D444A827E0829400426FBC /* Views */,
+				B4D444A727E0827500426FBC /* Models */,
+				B4D444A627E0826000426FBC /* Delegates */,
+				B4D4448E27DDB9B600426FBC /* Info.plist */,
+			);
+			path = MintynApp;
+			sourceTree = "<group>";
+		};
+		B4D444A627E0826000426FBC /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B4D4448227DDB9B300426FBC /* SceneDelegate.swift */,
+				B4D4448027DDB9B300426FBC /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		B4D444A727E0827500426FBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B4D444A827E0829400426FBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4D4448627DDB9B300426FBC /* Main.storyboard */,
+				B4D4448B27DDB9B600426FBC /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B4D444A927E0829D00426FBC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B4D4448427DDB9B300426FBC /* SignInViewController.swift */,
+				B4D444A427E080FB00426FBC /* Extension+HomeViewController.swift */,
+				B4D444A227DE427400426FBC /* TabsViewController.swift */,
+				B4D444A027DE3CFE00426FBC /* SupportViewController.swift */,
+				B4D4449E27DE3CEE00426FBC /* CardsViewController.swift */,
+				B4D4449C27DE3CDD00426FBC /* FinancesViewController.swift */,
+				B4D4449A27DE3CC500426FBC /* HomeViewController.swift */,
+				B4D4449827DE39AA00426FBC /* Extension+SettingsViewController.swift */,
+				B4D4449627DE396700426FBC /* SettingsViewController.swift */,
+				B4D4449427DDBAB400426FBC /* Extension+SignInViewController.swift */,
+				B4D444AB27E0862F00426FBC /* LegalViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B4D444AA27E082A900426FBC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B4D4448927DDB9B600426FBC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4D4447C27DDB9B300426FBC /* MintynApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D4449127DDB9B600426FBC /* Build configuration list for PBXNativeTarget "MintynApp" */;
+			buildPhases = (
+				B4D4447927DDB9B300426FBC /* Sources */,
+				B4D4447A27DDB9B300426FBC /* Frameworks */,
+				B4D4447B27DDB9B300426FBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MintynApp;
+			productName = MintynApp;
+			productReference = B4D4447D27DDB9B300426FBC /* MintynApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4D4447527DDB9B300426FBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B4D4447C27DDB9B300426FBC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B4D4447827DDB9B300426FBC /* Build configuration list for PBXProject "MintynApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4D4447427DDB9B300426FBC;
+			productRefGroup = B4D4447E27DDB9B300426FBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4D4447C27DDB9B300426FBC /* MintynApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4D4447B27DDB9B300426FBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D4448D27DDB9B600426FBC /* LaunchScreen.storyboard in Resources */,
+				B4D4448A27DDB9B600426FBC /* Assets.xcassets in Resources */,
+				B4D4448827DDB9B300426FBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4D4447927DDB9B300426FBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D4448527DDB9B300426FBC /* SignInViewController.swift in Sources */,
+				B4D4448127DDB9B300426FBC /* AppDelegate.swift in Sources */,
+				B4D4449F27DE3CEE00426FBC /* CardsViewController.swift in Sources */,
+				B4D444AC27E0862F00426FBC /* LegalViewController.swift in Sources */,
+				B4D4449527DDBAB400426FBC /* Extension+SignInViewController.swift in Sources */,
+				B4D4449727DE396800426FBC /* SettingsViewController.swift in Sources */,
+				B4D444A327DE427400426FBC /* TabsViewController.swift in Sources */,
+				B4D4448327DDB9B300426FBC /* SceneDelegate.swift in Sources */,
+				B4D4449D27DE3CDD00426FBC /* FinancesViewController.swift in Sources */,
+				B4D4449B27DE3CC500426FBC /* HomeViewController.swift in Sources */,
+				B4D444A527E080FB00426FBC /* Extension+HomeViewController.swift in Sources */,
+				B4D444A127DE3CFE00426FBC /* SupportViewController.swift in Sources */,
+				B4D4449927DE39AA00426FBC /* Extension+SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B4D4448627DDB9B300426FBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4D4448727DDB9B300426FBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B4D4448B27DDB9B600426FBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4D4448C27DDB9B600426FBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4D4448F27DDB9B600426FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4D4449027DDB9B600426FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4D4449227DDB9B600426FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MintynApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omatech.MintynApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4D4449327DDB9B600426FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MintynApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omatech.MintynApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4D4447827DDB9B300426FBC /* Build configuration list for PBXProject "MintynApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D4448F27DDB9B600426FBC /* Debug */,
+				B4D4449027DDB9B600426FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4D4449127DDB9B600426FBC /* Build configuration list for PBXNativeTarget "MintynApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D4449227DDB9B600426FBC /* Debug */,
+				B4D4449327DDB9B600426FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4D4447527DDB9B300426FBC /* Project object */;
+}

@@ -137,7 +137,7 @@ extension HomeViewController {
       userCardView.widthAnchor.constraint(equalToConstant: 45),
       userCardView.heightAnchor.constraint(equalToConstant: 45),
       // MARK: IMAGE CONSTRAINT
-      userImageView.topAnchor.constraint(equalTo: userCardView.topAnchor, constant: 2),
+      userImageView.topAnchor.constraint(equalTo: userCardView.topAnchor, constant: 0),
       userImageView.leadingAnchor.constraint(equalTo: userCardView.leadingAnchor, constant: 0),
       userImageView.trailingAnchor.constraint(equalTo: userCardView.trailingAnchor, constant: 0),
       userImageView.widthAnchor.constraint(equalToConstant: 45),

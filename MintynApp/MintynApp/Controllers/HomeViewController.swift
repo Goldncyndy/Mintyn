@@ -42,7 +42,7 @@ class HomeViewController: UIViewController {
   // MARK: - IMAGE VIEW
   lazy var userImageView: UIImageView = {
     let imageView = UIImageView()
-    imageView.image = UIImage(named: "profile2")
+    imageView.image = UIImage(named: "profile")
     imageView.layer.cornerRadius = 15.0
     imageView.clipsToBounds = true
     imageView.frame = userCardView.bounds
@@ -893,14 +893,14 @@ class HomeViewController: UIViewController {
   override func viewDidLayoutSubviews() {
     scrollView.isScrollEnabled = true
     scrollView.showsVerticalScrollIndicator = false
-    scrollView.contentSize = CGSize(width: view.frame.size.width, height: 1000)
+    scrollView.contentSize = CGSize(width: view.frame.size.width, height: 1200)
   }
   
   func setupScrollView() {
     view.addSubview(scrollView)
     navigationController?.navigationBar.isHidden = true
     scrollView.addSubview(contentView)
-    scrollView.contentSize = CGSize(width: view.frame.size.width, height: 2000)
+    scrollView.contentSize = CGSize(width: view.frame.size.width, height: 1200)
     scrollView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     scrollView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
     scrollView.topAnchor.constraint(equalTo: screenLabel.bottomAnchor, constant: 10).isActive = true

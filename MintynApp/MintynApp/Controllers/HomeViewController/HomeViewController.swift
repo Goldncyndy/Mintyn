@@ -394,6 +394,7 @@ class HomeViewController: UIViewController {
     }()
     let completeVerificationButton: UIButton = {
       let button = UIButton.makeSettingsButton()
+
       button.widthAnchor.constraint(equalToConstant: 10).isActive = true
       button.heightAnchor.constraint(equalToConstant: 20).isActive = true
       button.setBackgroundImage(UIImage(named: "forward"), for: .normal)
@@ -479,11 +480,11 @@ class HomeViewController: UIViewController {
     view.addSubview(topUpImage)
     view.addSubview(topUpLabel)
     topUpImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
-    topUpImage.leadingAnchor.constraint(equalTo: transferImage.trailingAnchor, constant: 40).isActive = true
+    topUpImage.leadingAnchor.constraint(equalTo: transferImage.trailingAnchor, constant: 50).isActive = true
     topUpImage.heightAnchor.constraint(equalToConstant: 30).isActive = true
     topUpImage.widthAnchor.constraint(equalToConstant: 30).isActive = true
     topUpLabel.topAnchor.constraint(equalTo: topUpImage.bottomAnchor, constant: 5).isActive = true
-    topUpLabel.leadingAnchor.constraint(equalTo: transferLabel.trailingAnchor, constant: 30).isActive = true
+    topUpLabel.leadingAnchor.constraint(equalTo: transferLabel.trailingAnchor, constant: 40).isActive = true
     // content 3
     let payBillImage: UIImageView = {
       let imageView = UIImageView()
@@ -514,11 +515,11 @@ class HomeViewController: UIViewController {
     view.addSubview(payBillLabel)
     //view.heightAnchor.constraint(equalToConstant: 48).isActive = true
     payBillImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
-    payBillImage.leadingAnchor.constraint(equalTo: topUpImage.trailingAnchor, constant: 40).isActive = true
+    payBillImage.leadingAnchor.constraint(equalTo: topUpImage.trailingAnchor, constant: 50).isActive = true
     payBillImage.heightAnchor.constraint(equalToConstant: 30).isActive = true
     payBillImage.widthAnchor.constraint(equalToConstant: 30).isActive = true
     payBillLabel.topAnchor.constraint(equalTo: payBillImage.bottomAnchor, constant: 5).isActive = true
-    payBillLabel.leadingAnchor.constraint(equalTo: topUpLabel.trailingAnchor, constant: 30).isActive = true
+    payBillLabel.leadingAnchor.constraint(equalTo: topUpLabel.trailingAnchor, constant: 40).isActive = true
     // content 4
     let saveMoneyImage: UIImageView = {
       let imageView = UIImageView()
@@ -548,11 +549,11 @@ class HomeViewController: UIViewController {
     view.addSubview(saveMoneyImage)
     view.addSubview(saveMoneyLabel)
     saveMoneyImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
-    saveMoneyImage.leadingAnchor.constraint(equalTo: payBillImage.trailingAnchor, constant: 45).isActive = true
+    saveMoneyImage.leadingAnchor.constraint(equalTo: payBillImage.trailingAnchor, constant: 55).isActive = true
     saveMoneyImage.heightAnchor.constraint(equalToConstant: 30).isActive = true
     saveMoneyImage.widthAnchor.constraint(equalToConstant: 30).isActive = true
     saveMoneyLabel.topAnchor.constraint(equalTo: saveMoneyImage.bottomAnchor, constant: 5).isActive = true
-    saveMoneyLabel.leadingAnchor.constraint(equalTo: payBillLabel.trailingAnchor, constant: 30).isActive = true
+    saveMoneyLabel.leadingAnchor.constraint(equalTo: payBillLabel.trailingAnchor, constant: 40).isActive = true
     // content 5
     let mintynInvestImage: UIImageView = {
       let imageView = UIImageView()
@@ -616,11 +617,11 @@ class HomeViewController: UIViewController {
     view.addSubview(loanImage)
     view.addSubview(loanLabel)
     loanImage.topAnchor.constraint(equalTo: topUpLabel.bottomAnchor, constant: 20).isActive = true
-    loanImage.leadingAnchor.constraint(equalTo: mintynInvestImage.trailingAnchor, constant: 40).isActive = true
+    loanImage.leadingAnchor.constraint(equalTo: mintynInvestImage.trailingAnchor, constant: 55).isActive = true
     loanImage.heightAnchor.constraint(equalToConstant: 30).isActive = true
     loanImage.widthAnchor.constraint(equalToConstant: 30).isActive = true
     loanLabel.topAnchor.constraint(equalTo: loanImage.bottomAnchor, constant: 5).isActive = true
-    loanLabel.leadingAnchor.constraint(equalTo: mintynInvestLabel.trailingAnchor, constant: 40).isActive = true
+    loanLabel.leadingAnchor.constraint(equalTo: mintynInvestLabel.trailingAnchor, constant: 50).isActive = true
     // content 7
     let accountBusinessImage: UIImageView = {
       let imageView = UIImageView()
@@ -651,11 +652,11 @@ class HomeViewController: UIViewController {
     view.addSubview(accountBusinessLabel)
     //view.heightAnchor.constraint(equalToConstant: 48).isActive = true
     accountBusinessImage.topAnchor.constraint(equalTo: payBillLabel.bottomAnchor, constant: 20).isActive = true
-    accountBusinessImage.leadingAnchor.constraint(equalTo: loanImage.trailingAnchor, constant: 45).isActive = true
+    accountBusinessImage.leadingAnchor.constraint(equalTo: loanImage.trailingAnchor, constant: 55).isActive = true
     accountBusinessImage.heightAnchor.constraint(equalToConstant: 30).isActive = true
     accountBusinessImage.widthAnchor.constraint(equalToConstant: 30).isActive = true
     accountBusinessLabel.topAnchor.constraint(equalTo: accountBusinessImage.bottomAnchor, constant: 5).isActive = true
-    accountBusinessLabel.leadingAnchor.constraint(equalTo: loanLabel.trailingAnchor, constant: 40).isActive = true
+    accountBusinessLabel.leadingAnchor.constraint(equalTo: loanLabel.trailingAnchor, constant: 50).isActive = true
     // content 8
   let moreImage: UIImageView = {
     let imageView = UIImageView()
@@ -686,11 +687,11 @@ class HomeViewController: UIViewController {
   view.addSubview(moreLabel)
   //view.heightAnchor.constraint(equalToConstant: 48).isActive = true
   moreImage.topAnchor.constraint(equalTo: saveMoneyLabel.bottomAnchor, constant: 15).isActive = true
-  moreImage.leadingAnchor.constraint(equalTo: accountBusinessImage.trailingAnchor, constant: 45).isActive = true
+  moreImage.leadingAnchor.constraint(equalTo: accountBusinessImage.trailingAnchor, constant: 55).isActive = true
   moreImage.heightAnchor.constraint(equalToConstant: 30).isActive = true
   moreImage.widthAnchor.constraint(equalToConstant: 30).isActive = true
   moreLabel.topAnchor.constraint(equalTo: moreImage.bottomAnchor, constant: 5).isActive = true
-  moreLabel.leadingAnchor.constraint(equalTo: accountBusinessLabel.trailingAnchor, constant: 30).isActive = true
+  moreLabel.leadingAnchor.constraint(equalTo: accountBusinessLabel.trailingAnchor, constant: 40).isActive = true
     
     let firstRowStack = UIStackView(arrangedSubviews: [firstStack, secondStack, thirdStack, fourthtack])
     firstRowStack.distribution = .fill

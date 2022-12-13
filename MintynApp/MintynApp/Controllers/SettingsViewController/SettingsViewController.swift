@@ -84,7 +84,6 @@ class SettingsViewController: UIViewController {
       button.widthAnchor.constraint(equalToConstant: 10).isActive = true
       button.heightAnchor.constraint(equalToConstant: 20).isActive = true
       button.translatesAutoresizingMaskIntoConstraints = false
-//      button.addTarget(self, action: #selector(goToPreferenceScreen), for: .touchUpInside)
       return button
     }()
     view.addSubview(preferenceImage)
@@ -124,7 +123,6 @@ class SettingsViewController: UIViewController {
       button.widthAnchor.constraint(equalToConstant: 10).isActive = true
       button.heightAnchor.constraint(equalToConstant: 20).isActive = true
       button.translatesAutoresizingMaskIntoConstraints = false
-      button.addTarget(self, action: #selector(goToNotificationScreen), for: .touchUpInside)
       return button
     }()
     view.addSubview(notificationsImage)
@@ -205,7 +203,6 @@ class SettingsViewController: UIViewController {
       button.widthAnchor.constraint(equalToConstant: 10).isActive = true
       button.heightAnchor.constraint(equalToConstant: 20).isActive = true
       button.translatesAutoresizingMaskIntoConstraints = false
-      button.addTarget(self, action: #selector(goToContactScreen), for: .touchUpInside)
       return button
     }()
     view.addSubview(contactUsImage)
@@ -244,7 +241,7 @@ class SettingsViewController: UIViewController {
       button.widthAnchor.constraint(equalToConstant: 10).isActive = true
       button.heightAnchor.constraint(equalToConstant: 20).isActive = true
       button.translatesAutoresizingMaskIntoConstraints = false
-      button.addTarget(self, action: #selector(goToContactScreen), for: .touchUpInside)
+      button.addTarget(self, action: #selector(updateSystemMode), for: .touchUpInside)
       return button
     }()
     view.addSubview(systemImage)
@@ -283,7 +280,6 @@ class SettingsViewController: UIViewController {
       button.translatesAutoresizingMaskIntoConstraints = false
       button.widthAnchor.constraint(equalToConstant: 10).isActive = true
       button.heightAnchor.constraint(equalToConstant: 20).isActive = true
-      button.addTarget(self, action: #selector(goToContactScreen), for: .touchUpInside)
       return button
     }()
     view.addSubview(businessImage)
@@ -334,13 +330,6 @@ class SettingsViewController: UIViewController {
   @objc func goToPersonalDetailScreen() {
         navigationController?.navigationBar.isHidden = true
   }
-  // go to preference screen
-  @objc func goToPreferenceScreen() {
-    navigationController?.navigationBar.isHidden = true
-  }
-  //  go to notification screen
-  @objc func goToNotificationScreen() {
-  }
   //  go to privacy policy screen
   @objc func goToPrivacyPolicyScreen() {
     navigationController?.navigationBar.isHidden = false
@@ -348,7 +337,8 @@ class SettingsViewController: UIViewController {
      navigationController?.pushViewController(newVC, animated: true)
   }
   //  go to contact us screen
-  @objc func goToContactScreen() {
+  @objc func updateSystemMode() {
+//    view.overrideUserInterfaceStyle = .dark
   }
   //  go to logout
   @objc func logout() {

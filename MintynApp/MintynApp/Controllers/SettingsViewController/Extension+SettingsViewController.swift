@@ -9,16 +9,12 @@ import UIKit
 
 extension SettingsViewController {
     func addGestureToTheView() {
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(goToPreferenceScreen))
-        preferenceView.addGestureRecognizer(gesture)
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(updateSystemMode))
+        systemView.addGestureRecognizer(gesture)
         let gesturePersonal = UITapGestureRecognizer(target: self, action: #selector(goToPersonalDetailScreen))
         personalDetailsView.addGestureRecognizer(gesturePersonal)
-        let gestureNotification = UITapGestureRecognizer(target: self, action: #selector(goToNotificationScreen))
-        notificationsView.addGestureRecognizer(gestureNotification)
         let gesturePrivacy = UITapGestureRecognizer(target: self, action: #selector(goToPrivacyPolicyScreen))
         privacyPolicyView.addGestureRecognizer(gesturePrivacy)
-        let gestureContact = UITapGestureRecognizer(target: self, action: #selector(goToContactScreen))
-        contactUsView.addGestureRecognizer(gestureContact)
     }
   // function to set up the views
   func doBasicSetUp() {

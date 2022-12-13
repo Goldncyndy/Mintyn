@@ -6,3 +6,4 @@ During development, i used the Model View Controller(MVC) code organization to o
 
 Other system architecture includes:  MVVM, MVP, VIPER, VIP etc. I would employ any of them depending on the project at hand.
 
+UnitTest, UITest module and Dark/Light Mode switch would be completely implemented to enhance the project, if time permits.

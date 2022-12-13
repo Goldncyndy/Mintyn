@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import WebKit
 
-class LegalViewController: UIViewController {
+class LegalViewController: UIViewController, WKUIDelegate {
+  
+  var webView: WKWebView!
   
   // MARK: - WELCOME LABEL SETUP VIEW
   let welcomeLabel: UILabel = {
@@ -26,14 +29,24 @@ class LegalViewController: UIViewController {
       view.backgroundColor = .white
       view.addSubview(welcomeLabel)
       setupViewConstriants()
-    }
+      
+      let myURL = URL(string:"https://mintyn.com/terms")
+            let myRequest = URLRequest(url: myURL!)
+            webView.load(myRequest)
+         }
+         override func loadView() {
+            let webConfiguration = WKWebViewConfiguration()
+            webView = WKWebView(frame: .zero, configuration: webConfiguration)
+            webView.uiDelegate = self
+            view = webView
+         }
+    
   func setupViewConstriants() {
     
     NSLayoutConstraint.activate ([
       // MARK: - welcome label Constraints
-      welcomeLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-      welcomeLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
-      welcomeLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100)
+      welcomeLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
+      welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
       ])
   }
 }

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4CF7E382947C691008890EB /* MintynAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF7E372947C691008890EB /* MintynAppTests.swift */; };
+		B4CF7E3F2947C864008890EB /* SignInTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF7E3E2947C864008890EB /* SignInTest.swift */; };
+		B4CF7E472947CAE1008890EB /* MintynAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF7E462947CAE1008890EB /* MintynAppUITests.swift */; };
+		B4CF7E492947CAE1008890EB /* MintynAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF7E482947CAE1008890EB /* MintynAppUITestsLaunchTests.swift */; };
+		B4CF7E512947E999008890EB /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF7E502947E999008890EB /* Extension+String.swift */; };
+		B4CF7E532947EB68008890EB /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF7E522947EB68008890EB /* Extension+ViewController.swift */; };
 		B4D4448127DDB9B300426FBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4448027DDB9B300426FBC /* AppDelegate.swift */; };
 		B4D4448327DDB9B300426FBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4448227DDB9B300426FBC /* SceneDelegate.swift */; };
 		B4D4448527DDB9B300426FBC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4448427DDB9B300426FBC /* SignInViewController.swift */; };
@@ -25,7 +31,32 @@
 		B4D444AC27E0862F00426FBC /* LegalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D444AB27E0862F00426FBC /* LegalViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B4CF7E392947C691008890EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4D4447527DDB9B300426FBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4D4447C27DDB9B300426FBC;
+			remoteInfo = MintynApp;
+		};
+		B4CF7E4A2947CAE1008890EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4D4447527DDB9B300426FBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4D4447C27DDB9B300426FBC;
+			remoteInfo = MintynApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		B4CF7E352947C690008890EB /* MintynAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MintynAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CF7E372947C691008890EB /* MintynAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintynAppTests.swift; sourceTree = "<group>"; };
+		B4CF7E3E2947C864008890EB /* SignInTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTest.swift; sourceTree = "<group>"; };
+		B4CF7E442947CAE1008890EB /* MintynAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MintynAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CF7E462947CAE1008890EB /* MintynAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintynAppUITests.swift; sourceTree = "<group>"; };
+		B4CF7E482947CAE1008890EB /* MintynAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintynAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B4CF7E502947E999008890EB /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		B4CF7E522947EB68008890EB /* Extension+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ViewController.swift"; sourceTree = "<group>"; };
 		B4D4447D27DDB9B300426FBC /* MintynApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MintynApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D4448027DDB9B300426FBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4D4448227DDB9B300426FBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +78,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B4CF7E322947C690008890EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CF7E412947CAE1008890EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4D4447A27DDB9B300426FBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,10 +102,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4CF7E29294796C8008890EB /* LegalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4D444AB27E0862F00426FBC /* LegalViewController.swift */,
+			);
+			path = LegalViewController;
+			sourceTree = "<group>";
+		};
+		B4CF7E2A29479718008890EB /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4D4449627DE396700426FBC /* SettingsViewController.swift */,
+				B4D4449827DE39AA00426FBC /* Extension+SettingsViewController.swift */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		B4CF7E2B2947973D008890EB /* SignInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4D4448427DDB9B300426FBC /* SignInViewController.swift */,
+				B4D4449427DDBAB400426FBC /* Extension+SignInViewController.swift */,
+			);
+			path = SignInViewController;
+			sourceTree = "<group>";
+		};
+		B4CF7E2C29479793008890EB /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4D444A427E080FB00426FBC /* Extension+HomeViewController.swift */,
+				B4D4449A27DE3CC500426FBC /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		B4CF7E2D294797B7008890EB /* TabsController */ = {
+			isa = PBXGroup;
+			children = (
+				B4D444A227DE427400426FBC /* TabsViewController.swift */,
+			);
+			path = TabsController;
+			sourceTree = "<group>";
+		};
+		B4CF7E2E294797DD008890EB /* SupportViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4D444A027DE3CFE00426FBC /* SupportViewController.swift */,
+			);
+			path = SupportViewController;
+			sourceTree = "<group>";
+		};
+		B4CF7E2F294797F3008890EB /* CardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4D4449E27DE3CEE00426FBC /* CardsViewController.swift */,
+			);
+			path = CardViewController;
+			sourceTree = "<group>";
+		};
+		B4CF7E3029479803008890EB /* FinancesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4D4449C27DE3CDD00426FBC /* FinancesViewController.swift */,
+			);
+			path = FinancesViewController;
+			sourceTree = "<group>";
+		};
+		B4CF7E362947C691008890EB /* MintynAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4CF7E372947C691008890EB /* MintynAppTests.swift */,
+				B4CF7E3E2947C864008890EB /* SignInTest.swift */,
+			);
+			path = MintynAppTests;
+			sourceTree = "<group>";
+		};
+		B4CF7E452947CAE1008890EB /* MintynAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B4CF7E462947CAE1008890EB /* MintynAppUITests.swift */,
+				B4CF7E482947CAE1008890EB /* MintynAppUITestsLaunchTests.swift */,
+			);
+			path = MintynAppUITests;
+			sourceTree = "<group>";
+		};
+		B4CF7E4F2947E941008890EB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B4CF7E502947E999008890EB /* Extension+String.swift */,
+				B4CF7E522947EB68008890EB /* Extension+ViewController.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		B4D4447427DDB9B300426FBC = {
 			isa = PBXGroup;
 			children = (
 				B4D4447F27DDB9B300426FBC /* MintynApp */,
+				B4CF7E362947C691008890EB /* MintynAppTests */,
+				B4CF7E452947CAE1008890EB /* MintynAppUITests */,
 				B4D4447E27DDB9B300426FBC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				B4D4447D27DDB9B300426FBC /* MintynApp.app */,
+				B4CF7E352947C690008890EB /* MintynAppTests.xctest */,
+				B4CF7E442947CAE1008890EB /* MintynAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,17 +257,15 @@
 		B4D444A927E0829D00426FBC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B4D4448427DDB9B300426FBC /* SignInViewController.swift */,
-				B4D444A427E080FB00426FBC /* Extension+HomeViewController.swift */,
-				B4D444A227DE427400426FBC /* TabsViewController.swift */,
-				B4D444A027DE3CFE00426FBC /* SupportViewController.swift */,
-				B4D4449E27DE3CEE00426FBC /* CardsViewController.swift */,
-				B4D4449C27DE3CDD00426FBC /* FinancesViewController.swift */,
-				B4D4449A27DE3CC500426FBC /* HomeViewController.swift */,
-				B4D4449827DE39AA00426FBC /* Extension+SettingsViewController.swift */,
-				B4D4449627DE396700426FBC /* SettingsViewController.swift */,
-				B4D4449427DDBAB400426FBC /* Extension+SignInViewController.swift */,
-				B4D444AB27E0862F00426FBC /* LegalViewController.swift */,
+				B4CF7E4F2947E941008890EB /* Utilities */,
+				B4CF7E3029479803008890EB /* FinancesViewController */,
+				B4CF7E2F294797F3008890EB /* CardViewController */,
+				B4CF7E2E294797DD008890EB /* SupportViewController */,
+				B4CF7E2D294797B7008890EB /* TabsController */,
+				B4CF7E2C29479793008890EB /* HomeViewController */,
+				B4CF7E2B2947973D008890EB /* SignInViewController */,
+				B4CF7E2A29479718008890EB /* SettingsViewController */,
+				B4CF7E29294796C8008890EB /* LegalViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -140,6 +281,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B4CF7E342947C690008890EB /* MintynAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4CF7E3B2947C691008890EB /* Build configuration list for PBXNativeTarget "MintynAppTests" */;
+			buildPhases = (
+				B4CF7E312947C690008890EB /* Sources */,
+				B4CF7E322947C690008890EB /* Frameworks */,
+				B4CF7E332947C690008890EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4CF7E3A2947C691008890EB /* PBXTargetDependency */,
+			);
+			name = MintynAppTests;
+			productName = MintynAppTests;
+			productReference = B4CF7E352947C690008890EB /* MintynAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B4CF7E432947CAE1008890EB /* MintynAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4CF7E4C2947CAE1008890EB /* Build configuration list for PBXNativeTarget "MintynAppUITests" */;
+			buildPhases = (
+				B4CF7E402947CAE1008890EB /* Sources */,
+				B4CF7E412947CAE1008890EB /* Frameworks */,
+				B4CF7E422947CAE1008890EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4CF7E4B2947CAE1008890EB /* PBXTargetDependency */,
+			);
+			name = MintynAppUITests;
+			productName = MintynAppUITests;
+			productReference = B4CF7E442947CAE1008890EB /* MintynAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		B4D4447C27DDB9B300426FBC /* MintynApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4D4449127DDB9B600426FBC /* Build configuration list for PBXNativeTarget "MintynApp" */;
@@ -164,9 +341,17 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					B4CF7E342947C690008890EB = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B4D4447C27DDB9B300426FBC;
+					};
+					B4CF7E432947CAE1008890EB = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B4D4447C27DDB9B300426FBC;
+					};
 					B4D4447C27DDB9B300426FBC = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -186,11 +371,27 @@
 			projectRoot = "";
 			targets = (
 				B4D4447C27DDB9B300426FBC /* MintynApp */,
+				B4CF7E342947C690008890EB /* MintynAppTests */,
+				B4CF7E432947CAE1008890EB /* MintynAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B4CF7E332947C690008890EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CF7E422947CAE1008890EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4D4447B27DDB9B300426FBC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -204,6 +405,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B4CF7E312947C690008890EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CF7E382947C691008890EB /* MintynAppTests.swift in Sources */,
+				B4CF7E3F2947C864008890EB /* SignInTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CF7E402947CAE1008890EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CF7E472947CAE1008890EB /* MintynAppUITests.swift in Sources */,
+				B4CF7E492947CAE1008890EB /* MintynAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4D4447927DDB9B300426FBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,7 +434,9 @@
 				B4D4449527DDBAB400426FBC /* Extension+SignInViewController.swift in Sources */,
 				B4D4449727DE396800426FBC /* SettingsViewController.swift in Sources */,
 				B4D444A327DE427400426FBC /* TabsViewController.swift in Sources */,
+				B4CF7E532947EB68008890EB /* Extension+ViewController.swift in Sources */,
 				B4D4448327DDB9B300426FBC /* SceneDelegate.swift in Sources */,
+				B4CF7E512947E999008890EB /* Extension+String.swift in Sources */,
 				B4D4449D27DE3CDD00426FBC /* FinancesViewController.swift in Sources */,
 				B4D4449B27DE3CC500426FBC /* HomeViewController.swift in Sources */,
 				B4D444A527E080FB00426FBC /* Extension+HomeViewController.swift in Sources */,
@@ -225,6 +446,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4CF7E3A2947C691008890EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4D4447C27DDB9B300426FBC /* MintynApp */;
+			targetProxy = B4CF7E392947C691008890EB /* PBXContainerItemProxy */;
+		};
+		B4CF7E4B2947CAE1008890EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4D4447C27DDB9B300426FBC /* MintynApp */;
+			targetProxy = B4CF7E4A2947CAE1008890EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B4D4448627DDB9B300426FBC /* Main.storyboard */ = {
@@ -246,6 +480,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B4CF7E3C2947C691008890EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HMQQ46T6BM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omatech.MintynAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MintynApp.app/MintynApp";
+			};
+			name = Debug;
+		};
+		B4CF7E3D2947C691008890EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HMQQ46T6BM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omatech.MintynAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MintynApp.app/MintynApp";
+			};
+			name = Release;
+		};
+		B4CF7E4D2947CAE1008890EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HMQQ46T6BM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omatech.MintynAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MintynApp;
+			};
+			name = Debug;
+		};
+		B4CF7E4E2947CAE1008890EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HMQQ46T6BM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omatech.MintynAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MintynApp;
+			};
+			name = Release;
+		};
 		B4D4448F27DDB9B600426FBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -419,6 +727,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B4CF7E3B2947C691008890EB /* Build configuration list for PBXNativeTarget "MintynAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4CF7E3C2947C691008890EB /* Debug */,
+				B4CF7E3D2947C691008890EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4CF7E4C2947CAE1008890EB /* Build configuration list for PBXNativeTarget "MintynAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4CF7E4D2947CAE1008890EB /* Debug */,
+				B4CF7E4E2947CAE1008890EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B4D4447827DDB9B300426FBC /* Build configuration list for PBXProject "MintynApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -42,6 +42,8 @@ class SettingsViewController: UIViewController {
     let personalDetailsButton: UIButton = {
       let button = UIButton.makeSettingsButton()
       button.setBackgroundImage(UIImage(named: "forward"), for: .normal)
+      button.heightAnchor.constraint(equalToConstant: 20).isActive = true
+      button.widthAnchor.constraint(equalToConstant: 10).isActive = true
       button.translatesAutoresizingMaskIntoConstraints = false
       button.addTarget(self, action: #selector(goToPersonalDetailScreen), for: .touchUpInside)
       return button
@@ -50,11 +52,13 @@ class SettingsViewController: UIViewController {
     view.addSubview(personalDetailsLabel)
     view.addSubview(personalDetailsButton)
     view.heightAnchor.constraint(equalToConstant: 48).isActive = true
-    personalDetailsImage.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+    personalDetailsImage.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     personalDetailsImage.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-    personalDetailsLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+    
+    personalDetailsLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     personalDetailsLabel.leftAnchor.constraint(equalTo: personalDetailsImage.rightAnchor, constant: 20).isActive = true
-    personalDetailsButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
+    
+    personalDetailsButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     personalDetailsButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
@@ -77,6 +81,8 @@ class SettingsViewController: UIViewController {
     let preferenceButton: UIButton = {
       let button = UIButton.makeSettingsButton()
       button.setBackgroundImage(UIImage(named: "forward"), for: .normal)
+      button.widthAnchor.constraint(equalToConstant: 10).isActive = true
+      button.heightAnchor.constraint(equalToConstant: 20).isActive = true
       button.translatesAutoresizingMaskIntoConstraints = false
 //      button.addTarget(self, action: #selector(goToPreferenceScreen), for: .touchUpInside)
       return button
@@ -85,12 +91,15 @@ class SettingsViewController: UIViewController {
     view.addSubview(preferenceLabel)
     view.addSubview(preferenceButton)
     view.heightAnchor.constraint(equalToConstant: 48).isActive = true
-    preferenceImage.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+    
+    preferenceImage.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     preferenceImage.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-    preferenceLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+    
     preferenceLabel.leftAnchor.constraint(equalTo: preferenceImage.rightAnchor, constant: 20).isActive = true
-    preferenceButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
+    preferenceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    
     preferenceButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+    preferenceButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
   }()
@@ -112,6 +121,8 @@ class SettingsViewController: UIViewController {
     let notificationsButton: UIButton = {
       let button = UIButton.makeSettingsButton()
       button.setBackgroundImage(UIImage(named: "forward"), for: .normal)
+      button.widthAnchor.constraint(equalToConstant: 10).isActive = true
+      button.heightAnchor.constraint(equalToConstant: 20).isActive = true
       button.translatesAutoresizingMaskIntoConstraints = false
       button.addTarget(self, action: #selector(goToNotificationScreen), for: .touchUpInside)
       return button
@@ -120,12 +131,16 @@ class SettingsViewController: UIViewController {
     view.addSubview(notificationsLabel)
     view.addSubview(notificationsButton)
     view.heightAnchor.constraint(equalToConstant: 48).isActive = true
-    notificationsImage.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+    
     notificationsImage.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-    notificationsLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+    notificationsImage.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    
     notificationsLabel.leftAnchor.constraint(equalTo: notificationsImage.rightAnchor, constant: 20).isActive = true
-    notificationsButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
+    notificationsLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    
     notificationsButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+    notificationsButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
   }()
@@ -147,6 +162,8 @@ class SettingsViewController: UIViewController {
     let privacyPolicyButton: UIButton = {
       let button = UIButton.makeSettingsButton()
       button.setBackgroundImage(UIImage(named: "forward"), for: .normal)
+      button.widthAnchor.constraint(equalToConstant: 10).isActive = true
+      button.heightAnchor.constraint(equalToConstant: 20).isActive = true
       button.translatesAutoresizingMaskIntoConstraints = false
       button.addTarget(self, action: #selector(goToPrivacyPolicyScreen), for: .touchUpInside)
       return button
@@ -155,11 +172,14 @@ class SettingsViewController: UIViewController {
     view.addSubview(privacyPolicyLabel)
     view.addSubview(privacyPolicyButton)
     view.heightAnchor.constraint(equalToConstant: 48).isActive = true
-    privacyPolicyImage.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+    
+    privacyPolicyImage.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     privacyPolicyImage.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-    privacyPolicyLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+    
+    privacyPolicyLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     privacyPolicyLabel.leftAnchor.constraint(equalTo: privacyPolicyImage.rightAnchor, constant: 20).isActive = true
-    privacyPolicyButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
+    
+    privacyPolicyButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     privacyPolicyButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
@@ -182,6 +202,8 @@ class SettingsViewController: UIViewController {
     let contactUsButton: UIButton = {
       let button = UIButton.makeSettingsButton()
       button.setBackgroundImage(UIImage(named: "forward"), for: .normal)
+      button.widthAnchor.constraint(equalToConstant: 10).isActive = true
+      button.heightAnchor.constraint(equalToConstant: 20).isActive = true
       button.translatesAutoresizingMaskIntoConstraints = false
       button.addTarget(self, action: #selector(goToContactScreen), for: .touchUpInside)
       return button
@@ -190,11 +212,13 @@ class SettingsViewController: UIViewController {
     view.addSubview(contactUsLabel)
     view.addSubview(contactUsButton)
     view.heightAnchor.constraint(equalToConstant: 48).isActive = true
-    contactUsImage.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+    contactUsImage.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     contactUsImage.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-    contactUsLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+    
+    contactUsLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     contactUsLabel.leftAnchor.constraint(equalTo: contactUsImage.rightAnchor, constant: 20).isActive = true
-    contactUsButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
+    
+    contactUsButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     contactUsButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
@@ -217,6 +241,8 @@ class SettingsViewController: UIViewController {
     let systemButton: UIButton = {
       let button = UIButton.makeSettingsButton()
       button.setBackgroundImage(UIImage(named: "forward"), for: .normal)
+      button.widthAnchor.constraint(equalToConstant: 10).isActive = true
+      button.heightAnchor.constraint(equalToConstant: 20).isActive = true
       button.translatesAutoresizingMaskIntoConstraints = false
       button.addTarget(self, action: #selector(goToContactScreen), for: .touchUpInside)
       return button
@@ -225,11 +251,13 @@ class SettingsViewController: UIViewController {
     view.addSubview(systemLabel)
     view.addSubview(systemButton)
     view.heightAnchor.constraint(equalToConstant: 48).isActive = true
-    systemImage.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+    systemImage.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     systemImage.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-    systemLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+    
+    systemLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     systemLabel.leftAnchor.constraint(equalTo: systemImage.rightAnchor, constant: 20).isActive = true
-    systemButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
+    
+    systemButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     systemButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
@@ -253,6 +281,8 @@ class SettingsViewController: UIViewController {
       let button = UIButton.makeSettingsButton()
       button.setBackgroundImage(UIImage(named: "forward"), for: .normal)
       button.translatesAutoresizingMaskIntoConstraints = false
+      button.widthAnchor.constraint(equalToConstant: 10).isActive = true
+      button.heightAnchor.constraint(equalToConstant: 20).isActive = true
       button.addTarget(self, action: #selector(goToContactScreen), for: .touchUpInside)
       return button
     }()
@@ -260,11 +290,13 @@ class SettingsViewController: UIViewController {
     view.addSubview(businessLabel)
     view.addSubview(businessButton)
     view.heightAnchor.constraint(equalToConstant: 48).isActive = true
-    businessImage.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+    businessImage.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     businessImage.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-    businessLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+    
+    businessLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     businessLabel.leftAnchor.constraint(equalTo: businessImage.rightAnchor, constant: 20).isActive = true
-    businessButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
+    
+    businessButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     businessButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
     view.translatesAutoresizingMaskIntoConstraints = false
     return view

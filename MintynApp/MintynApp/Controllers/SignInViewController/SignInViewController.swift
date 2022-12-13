@@ -46,8 +46,7 @@ class SignInViewController: UIViewController {
     let label = UILabel()
     label.text = "Mintyn \nInsurance"
     label.numberOfLines = 0
-    label.font = UIFont(name: "Helvetica", size: 14)
-    label.font = UIFont.boldSystemFont(ofSize: 14)
+    label.font = UIFont.boldSystemFont(ofSize: 12)
     label.textAlignment = .left
     label.textColor = .white
     label.translatesAutoresizingMaskIntoConstraints = false
@@ -79,8 +78,7 @@ class SignInViewController: UIViewController {
     let label = UILabel()
     label.text = "Open an\nAccount"
     label.numberOfLines = 0
-    label.font = UIFont(name: "Helvetica", size: 14)
-    label.font = UIFont.boldSystemFont(ofSize: 14)
+    label.font = UIFont.boldSystemFont(ofSize: 12)
     label.textAlignment = .left
     label.textColor = .white
     label.translatesAutoresizingMaskIntoConstraints = false
@@ -102,8 +100,7 @@ class SignInViewController: UIViewController {
     let label = UILabel()
     label.text = "Register\nyour Business"
     label.numberOfLines = 0
-    label.font = UIFont(name: "Helvetica", size: 14)
-    label.font = UIFont.boldSystemFont(ofSize: 14)
+    label.font = UIFont.boldSystemFont(ofSize: 12)
     label.textAlignment = .left
     label.textColor = .white
     label.translatesAutoresizingMaskIntoConstraints = false
@@ -135,8 +132,8 @@ class SignInViewController: UIViewController {
     let label = UILabel()
     label.text = "Contact\nSupport"
     label.numberOfLines = 0
-    label.font = UIFont(name: "Helvetica", size: 14)
-    label.font = UIFont.boldSystemFont(ofSize: 14)
+//    label.font = UIFont(name: "Helvetica", size: 14)
+    label.font = UIFont.boldSystemFont(ofSize: 12)
     label.textAlignment = .left
     label.textColor = .white
     label.translatesAutoresizingMaskIntoConstraints = false
@@ -168,9 +165,8 @@ class SignInViewController: UIViewController {
     let label = UILabel()
     label.text = "Phone Number"
     label.textColor = .white
-    label.font = UIFont(name: "Helvetica", size: 14)
+    label.font = UIFont(name: "Helvetica", size: 12)
     label.translatesAutoresizingMaskIntoConstraints = false
-    label.font = UIFont.boldSystemFont(ofSize: 14)
     return label
   }()
   
@@ -179,9 +175,8 @@ class SignInViewController: UIViewController {
     let label = UILabel()
     label.text = "Password"
     label.textColor = .white
-    label.font = UIFont(name: "Helvetica", size: 14)
+    label.font = UIFont(name: "Helvetica", size: 12)
     label.translatesAutoresizingMaskIntoConstraints = false
-    label.font = UIFont.boldSystemFont(ofSize: 14)
     return label
   }()
   
@@ -196,8 +191,8 @@ class SignInViewController: UIViewController {
     textField.font = UIFont(name: "Helvetica", size: 12)
     textField.autocapitalizationType = .none
     textField.attributedPlaceholder = NSAttributedString(
-      string: "+234 56789012",
-      attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
+      string: "+234 9056789012",
+      attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray]
   )
     textField.textColor = .white
     return textField
@@ -206,14 +201,27 @@ class SignInViewController: UIViewController {
   let passwordTextField: LeftPaddedTextField = {
       let textField = LeftPaddedTextField()
       textField.translatesAutoresizingMaskIntoConstraints = false
-      textField.placeholder = "johnsmith1#"
       textField.textColor = .white
       textField.font = UIFont(name: "Helvetica", size: 12)
       textField.backgroundColor = UIColor(red: 0.15, green: 0.15, blue: 0.15, alpha: 1.00)
       textField.isSecureTextEntry = true
       textField.autocapitalizationType = .none
       textField.layer.cornerRadius = 10
+      textField.attributedPlaceholder = NSAttributedString(
+      string: "*********",
+      attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray]
+  )
       return textField
+  }()
+  
+  let infoLabel: UILabel = {
+    let label = UILabel()
+    label.text = "enter valid Phone Number or Password"
+    label.textColor = .clear
+    label.isHidden = true
+    label.font = UIFont(name: "Helvetica", size: 8)
+    label.translatesAutoresizingMaskIntoConstraints = false
+    return label
   }()
   
   // MARK: - PASSWORD LABEL SETUP
@@ -221,9 +229,8 @@ class SignInViewController: UIViewController {
     let label = UILabel()
     label.text = "Remember me"
     label.textColor = .white
-    label.font = UIFont(name: "Helvetica", size: 14)
+    label.font = UIFont(name: "Helvetica", size: 12)
     label.translatesAutoresizingMaskIntoConstraints = false
-    label.font = UIFont.boldSystemFont(ofSize: 14)
     return label
   }()
   
@@ -232,9 +239,8 @@ class SignInViewController: UIViewController {
     let label = UILabel()
     label.text = "Forgot Password?"
     label.textColor = UIColor(red: 0.67, green: 0.50, blue: 0.22, alpha: 1.00)
-    label.font = UIFont(name: "Helvetica", size: 14)
+    label.font = UIFont(name: "Helvetica", size: 12)
     label.translatesAutoresizingMaskIntoConstraints = false
-    label.font = UIFont.boldSystemFont(ofSize: 14)
     return label
   }()
   
@@ -255,9 +261,8 @@ class SignInViewController: UIViewController {
     let label = UILabel()
     label.text = "Register new device"
     label.textColor = UIColor(red: 0.67, green: 0.50, blue: 0.22, alpha: 1.00)
-    label.font = UIFont(name: "Helvetica", size: 15)
+    label.font = UIFont(name: "Helvetica", size: 12)
     label.translatesAutoresizingMaskIntoConstraints = false
-    label.font = UIFont.boldSystemFont(ofSize: 15)
     return label
   }()
   
@@ -266,9 +271,8 @@ class SignInViewController: UIViewController {
     let label = UILabel()
     label.text = "Powered by FINEX MFB"
     label.textColor = .white
-    label.font = UIFont(name: "Helvetica", size: 12)
+    label.font = UIFont(name: "Helvetica", size: 10)
     label.translatesAutoresizingMaskIntoConstraints = false
-    label.font = UIFont.boldSystemFont(ofSize: 12)
     return label
   }()
   
@@ -277,9 +281,8 @@ class SignInViewController: UIViewController {
     let label = UILabel()
     label.text = "Version 1.2.61"
     label.textColor = .white
-    label.font = UIFont(name: "Helvetica", size: 8)
+    label.font = UIFont(name: "Helvetica", size: 6)
     label.translatesAutoresizingMaskIntoConstraints = false
-    label.font = UIFont.boldSystemFont(ofSize: 8)
     return label
   }()
 
@@ -289,8 +292,29 @@ class SignInViewController: UIViewController {
   }
   
   @objc func didTapLoginButton() {
-    let newVC = TabsViewController()
-    navigationController?.pushViewController(newVC, animated: true)
+    
+    guard let email = phoneNumberTextView.text, let password = passwordTextField.text else {
+      phoneNumberTextView.layer.borderWidth = 1
+      phoneNumberTextView.layer.borderColor = UIColor.red.cgColor
+      passwordTextField.layer.borderWidth = 1
+      passwordTextField.layer.borderColor = UIColor.red.cgColor
+      return
+    }
+    
+    if email.isValidPhoneNumber && password.isValidPassword {
+      let newVC = TabsViewController()
+      navigationController?.pushViewController(newVC, animated: true)
+    }
+    else {
+      phoneNumberTextView.layer.borderWidth = 1
+      phoneNumberTextView.layer.borderColor = UIColor.red.cgColor
+      passwordTextField.layer.borderWidth = 1
+      passwordTextField.layer.borderColor = UIColor.red.cgColor
+      infoLabel.isHidden = false
+      infoLabel.textColor = .red
+//      showToastWithTItle("Please enter a valid email and password", type: .error)
+    }
+    
   }
 
 }

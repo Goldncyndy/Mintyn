@@ -56,7 +56,7 @@ class HomeViewController: UIViewController {
     let label = UILabel()
     label.text = "Cynthia E. \nIndividual"
     label.numberOfLines = 0
-    label.font = UIFont(name: "Helvetica", size: 18)
+    label.font = UIFont(name: "Helvetica", size: 16)
     label.textAlignment = .left
     label.textColor = .black
     label.translatesAutoresizingMaskIntoConstraints = false
@@ -68,7 +68,7 @@ class HomeViewController: UIViewController {
     let label = UILabel()
     label.text = "3118820011"
     label.numberOfLines = 0
-    label.font = UIFont(name: "Helvetica", size: 16)
+    label.font = UIFont(name: "Helvetica", size: 14)
     label.textAlignment = .left
     label.textColor = .orange
     label.translatesAutoresizingMaskIntoConstraints = false
@@ -120,8 +120,8 @@ class HomeViewController: UIViewController {
     label.text = "XXX.XXX"
     label.textColor = .white
     label.numberOfLines = 0
-    label.font = UIFont(name: "Helvetica", size: 25)
-    label.font = UIFont.systemFont(ofSize: 25, weight: .bold)
+//    label.font = UIFont(name: "Helvetica", size: 25)
+    label.font = UIFont.systemFont(ofSize: 22, weight: .bold)
     label.textAlignment = .left
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
@@ -394,6 +394,8 @@ class HomeViewController: UIViewController {
     }()
     let completeVerificationButton: UIButton = {
       let button = UIButton.makeSettingsButton()
+      button.widthAnchor.constraint(equalToConstant: 10).isActive = true
+      button.heightAnchor.constraint(equalToConstant: 20).isActive = true
       button.setBackgroundImage(UIImage(named: "forward"), for: .normal)
       button.translatesAutoresizingMaskIntoConstraints = false
       //button.addTarget(self, action: #selector(goToContactScreen), for: .touchUpInside)
@@ -691,21 +693,21 @@ class HomeViewController: UIViewController {
   moreLabel.leadingAnchor.constraint(equalTo: accountBusinessLabel.trailingAnchor, constant: 30).isActive = true
     
     let firstRowStack = UIStackView(arrangedSubviews: [firstStack, secondStack, thirdStack, fourthtack])
-    firstRowStack.distribution = .equalSpacing
-    firstRowStack.spacing = 1
+    firstRowStack.distribution = .fill
+    firstRowStack.spacing = 5
     firstRowStack.axis = .horizontal
-    firstRowStack.alignment = .center
+//    firstRowStack.alignment = .center
     firstRowStack.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(firstRowStack)
     firstRowStack.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
     firstRowStack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
     firstRowStack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
-    
+
     let secondRowStack = UIStackView(arrangedSubviews: [fifthStack, sixthStack, seventhStack, eightStack])
-    secondRowStack.distribution = .equalSpacing
-    secondRowStack.spacing = 1
+    secondRowStack.distribution = .fill
+    secondRowStack.spacing = 5
     secondRowStack.axis = .horizontal
-    secondRowStack.alignment = .center
+//    secondRowStack.alignment = .center
     secondRowStack.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(secondRowStack)
     secondRowStack.topAnchor.constraint(equalTo: firstRowStack.bottomAnchor, constant: 10).isActive = true

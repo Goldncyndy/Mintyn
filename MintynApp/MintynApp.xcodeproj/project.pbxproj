@@ -13,6 +13,9 @@
 		B4CF7E492947CAE1008890EB /* MintynAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF7E482947CAE1008890EB /* MintynAppUITestsLaunchTests.swift */; };
 		B4CF7E512947E999008890EB /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF7E502947E999008890EB /* Extension+String.swift */; };
 		B4CF7E532947EB68008890EB /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF7E522947EB68008890EB /* Extension+ViewController.swift */; };
+		B4CF7E55294858FE008890EB /* MintynAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF7E54294858FE008890EB /* MintynAccountViewController.swift */; };
+		B4CF7E5729485913008890EB /* MintynPrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF7E5629485913008890EB /* MintynPrivacyViewController.swift */; };
+		B4CF7E592948592A008890EB /* SavingGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF7E582948592A008890EB /* SavingGoalViewController.swift */; };
 		B4D4448127DDB9B300426FBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4448027DDB9B300426FBC /* AppDelegate.swift */; };
 		B4D4448327DDB9B300426FBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4448227DDB9B300426FBC /* SceneDelegate.swift */; };
 		B4D4448527DDB9B300426FBC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4448427DDB9B300426FBC /* SignInViewController.swift */; };
@@ -57,6 +60,9 @@
 		B4CF7E482947CAE1008890EB /* MintynAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintynAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B4CF7E502947E999008890EB /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		B4CF7E522947EB68008890EB /* Extension+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ViewController.swift"; sourceTree = "<group>"; };
+		B4CF7E54294858FE008890EB /* MintynAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintynAccountViewController.swift; sourceTree = "<group>"; };
+		B4CF7E5629485913008890EB /* MintynPrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintynPrivacyViewController.swift; sourceTree = "<group>"; };
+		B4CF7E582948592A008890EB /* SavingGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingGoalViewController.swift; sourceTree = "<group>"; };
 		B4D4447D27DDB9B300426FBC /* MintynApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MintynApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D4448027DDB9B300426FBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4D4448227DDB9B300426FBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				B4D444AB27E0862F00426FBC /* LegalViewController.swift */,
+				B4CF7E54294858FE008890EB /* MintynAccountViewController.swift */,
+				B4CF7E5629485913008890EB /* MintynPrivacyViewController.swift */,
+				B4CF7E582948592A008890EB /* SavingGoalViewController.swift */,
 			);
 			path = LegalViewController;
 			sourceTree = "<group>";
@@ -428,10 +437,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4D4448527DDB9B300426FBC /* SignInViewController.swift in Sources */,
+				B4CF7E592948592A008890EB /* SavingGoalViewController.swift in Sources */,
 				B4D4448127DDB9B300426FBC /* AppDelegate.swift in Sources */,
 				B4D4449F27DE3CEE00426FBC /* CardsViewController.swift in Sources */,
 				B4D444AC27E0862F00426FBC /* LegalViewController.swift in Sources */,
 				B4D4449527DDBAB400426FBC /* Extension+SignInViewController.swift in Sources */,
+				B4CF7E55294858FE008890EB /* MintynAccountViewController.swift in Sources */,
 				B4D4449727DE396800426FBC /* SettingsViewController.swift in Sources */,
 				B4D444A327DE427400426FBC /* TabsViewController.swift in Sources */,
 				B4CF7E532947EB68008890EB /* Extension+ViewController.swift in Sources */,
@@ -442,6 +453,7 @@
 				B4D444A527E080FB00426FBC /* Extension+HomeViewController.swift in Sources */,
 				B4D444A127DE3CFE00426FBC /* SupportViewController.swift in Sources */,
 				B4D4449927DE39AA00426FBC /* Extension+SettingsViewController.swift in Sources */,
+				B4CF7E5729485913008890EB /* MintynPrivacyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
